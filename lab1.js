@@ -43,8 +43,8 @@ function assert(expression, failureMessage) {
  Here are some examples for how to use the assert method:
 */
 
-assert(1 === 1, '1 equals 1 - this assert will pass.');
-assert(1 === 2, 'this is an example of a failing assertion. 1 does not equal 2.');
+// assert(1 === 1, '1 equals 1 - this assert will pass.');
+// assert(1 === 2, 'this is an example of a failing assertion. 1 does not equal 2.');
 
 /* ===========================================================================
 ------------------Assertions (8 points total)---------------------------------
@@ -80,11 +80,11 @@ var sentence2 = 'Come over here so you can scratch my belly.';
 // 'chirp' (10 points)
 
 // your code goes here
-	sentence1 = sentence1.split(' ');
-	for (var i = 0; i < sentence1.length; i++) {
-		sentence1[i] = 'chirp';
-	}
-	sentence1 = sentence1.join(' ') + '.';
+sentence1 = sentence1.split(' ');
+for (var i = 0; i < sentence1.length; i++) {
+  sentence1[i] = 'chirp';
+}
+sentence1 = sentence1.join(' ') + '.';
 
 // TODO: part #2: use a while or do-while loop to replace the words in sentence 2
 // with 'chirp' (10 points)
@@ -93,8 +93,8 @@ var sentence2 = 'Come over here so you can scratch my belly.';
 sentence2 = sentence2.split(' ');
 var counter = 0;
 while (counter < sentence2.length) {
-	sentence2[counter] = 'chirp';
-	counter++;
+  sentence2[counter] = 'chirp';
+  counter++;
 }
 sentence2 = sentence2.join(' ') + '.';
 
@@ -153,11 +153,11 @@ var tooHungryDay;
 var averageMeals = 0;
 tooHungryDay = 0;
 for (var j = 0; j < mealsPerDay.length; j++) {
-	averageMeals += mealsPerDay[j];
-	console.log('Average meals since the caretaker started: ' + averageMeals / (j + 1));
-	if ((averageMeals / (j + 1)) < 4 && tooHungryDay === 0) {
-	tooHungryDay = j + 1;
-	}
+  averageMeals += mealsPerDay[j];
+  console.log('Average meals since the caretaker started: ' + averageMeals / (j + 1));
+  if ((averageMeals / (j + 1)) < 4 && tooHungryDay === 0) {
+    tooHungryDay = j + 1;
+  }
 }
 
 assert(tooHungryDay, 'remember to assign the answer to tooHungryDay');
